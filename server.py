@@ -215,5 +215,6 @@ async def generate_audit_report(
     )
 
 
+app = mcp.app()
 if __name__ == "__main__":
-    mcp.run(transport="stdio")
+    uvicorn.run(app, host="0.0.0.0", port=8000)
