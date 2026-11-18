@@ -5,14 +5,9 @@ from datetime import datetime, timezone
 from typing import Any
 
 import httpx
-from mcp.server.fastmcp import FastMCP
-
-mcp = FastMCP("Public Profile Audit")
-
-mcp = FastMCP("Public Profile Audit")
+from mcp.server.mcpserver import MCPServer
 
 mcp = MCPServer("Public Profile Audit")
-
 
 # Plataformas com URLs públicas de perfil.
 # A verificação de HTTP não garante que um perfil realmente exista.
