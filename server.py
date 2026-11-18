@@ -1,4 +1,3 @@
-
 import asyncio
 import json
 import re
@@ -6,7 +5,11 @@ from datetime import datetime, timezone
 from typing import Any
 
 import httpx
-from mcp.server.mcpserver import MCPServer
+from mcp.server.fastmcp import FastMCP
+
+mcp = FastMCP("Public Profile Audit")
+
+mcp = FastMCP("Public Profile Audit")
 
 mcp = MCPServer("Public Profile Audit")
 
